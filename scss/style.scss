@@ -139,7 +139,6 @@
     &__text {
         @include text(16.7px, #e9e7e7, 400);
         margin-top: 35px;
-        z-index: 3;
 
     }
 
@@ -148,7 +147,8 @@
         button {
             color: #e9e7e7;
             border: 3px solid #e9e7e7;
-            z-index: 3;
+            padding: 15px 60px;
+            margin-bottom: 50px;
         }
     }
 }
