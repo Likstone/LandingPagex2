@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.center, .travel-logs, .header {
+.center, .gallery, .travel-logs, .header {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -244,8 +244,74 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 50px;
 }
 
+.gallery {
+  min-height: 800px;
+  background-color: #e9e7e7;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery__bg {
+  background: url("../img/background/left_3.png") no-repeat left center, url("../img/background/right_3.png") no-repeat right bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.gallery__box {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content-box {
+  max-width: 365px;
+  margin: 10px;
+  z-index: 2;
+}
+.content-box__border {
+  width: 53px;
+  height: 3px;
+  background-color: black;
+  margin-top: 30px;
+}
+.content-box__photo img {
+  width: 100%;
+}
+.content-box__title {
+  font-family: "Cardo";
+  font-size: 36.4px;
+  color: #232323;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  max-width: 235px;
+  margin-top: 28px;
+}
+.content-box__text {
+  font-family: "Lato";
+  font-size: 16.7px;
+  color: #232323;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-top: 35px;
+}
+
 @media (max-width: 1150px) {
   .travel-logs__bg {
+    opacity: 0.4;
+  }
+  .gallery__bg {
     opacity: 0.4;
   }
 }
