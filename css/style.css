@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Lato:wght@300;400;700;900&display=swap");
 * {
   padding: 0;
@@ -71,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.center, .gallery, .travel-logs, .header {
+.center, .choose, .places, .gallery, .travel-logs, .header {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -157,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__title {
   font-family: "Cardo";
-  font-size: 81.5px;
+  font-size: 80px;
   color: #232323;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -274,6 +275,126 @@ h1, h2, h3, h4, h5, h6 {
       justify-content: space-around;
 }
 
+.places {
+  min-height: 1800px;
+  background-color: #e9e7e7;
+  position: relative;
+}
+.places__bg-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.2;
+}
+.places__title-box {
+  min-height: 780px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: url("../img/background/left__4.png") bottom left no-repeat;
+}
+.places__title-box span {
+  font-style: italic;
+  text-decoration: underline;
+}
+.places__title-box img {
+  margin-top: 220px;
+}
+.places__title {
+  font-family: "Cardo";
+  font-size: 97.7px;
+  color: #232323;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  max-width: 785px;
+  margin: 60px auto;
+}
+.places__text {
+  font-family: "Lato";
+  font-size: 25px;
+  color: #232323;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-top: 65px;
+}
+.places__content {
+  max-width: 1200px;
+  margin: 200px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.places__content-block1 {
+  padding: 0 50px 0 0;
+  position: relative;
+}
+.places__content-block1 img:nth-child(1) {
+  position: absolute;
+  top: 260px;
+  left: -36px;
+  opacity: 0.9;
+}
+.places__content-block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+.places__photo img {
+  width: 100%;
+}
+.places__content-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.places__content-title {
+  font-family: "Cardo";
+  font-size: 36.4px;
+  color: #232323;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-decoration: underline;
+  line-height: 50px;
+  width: 70%;
+  margin-right: 40px;
+}
+.places__content-text {
+  font-family: "Lato";
+  font-size: 16.7px;
+  color: #232323;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  max-height: 200px;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  scrollbar-color: black;
+}
+.places__content-text:hover {
+  overflow-y: scroll;
+}
+.places__button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.places__button span {
+  font-size: 150px;
+  content: "→";
+}
+.places__button button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .content-box {
   max-width: 365px;
   margin: 10px;
@@ -307,6 +428,97 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 35px;
 }
 
+.choose {
+  min-height: 872px;
+  background: url("../img/background/block5.png") bottom -35px left no-repeat, #232323;
+}
+.choose__container {
+  padding: 80px 0 160px 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.choose__content-block1 {
+  max-width: 450px;
+}
+.choose__title {
+  font-family: "Cardo";
+  font-size: 55.5px;
+  color: #e9e7e7;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 110px;
+}
+.choose__text-name {
+  font-family: "Lato";
+  font-size: 25px;
+  color: #e9e7e7;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-top: 60px;
+}
+.choose__text {
+  font-family: "Lato";
+  font-size: 16.7;
+  color: #e9e7e7;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-top: 25px;
+  height: 85px;
+  width: 380px;
+  overflow: hidden;
+  text-align: justify;
+}
+.choose__text:hover {
+  width: 396.53px;
+  overflow-y: auto;
+}
+.choose__content-block2 {
+  margin: auto 0;
+}
+.choose__content-block2 img {
+  max-width: 100%;
+}
+
+@media (max-width: 1030px) {
+  .places__content-block1 {
+    display: none;
+  }
+  .places__content-block2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .places__content-text-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .places__arrow {
+    bottom: -50px;
+  }
+  .places__content-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .places__content-text {
+    padding: 0 20px;
+    max-height: 100%;
+  }
+  .places__photo img {
+    padding: 20px;
+  }
+}
 @media (max-width: 1150px) {
   .travel-logs__bg {
     opacity: 0.4;
@@ -324,5 +536,58 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .choose {
+    background: #232323;
+  }
+  .choose__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0 0;
+  }
+  .choose__content-block1 {
+    margin: 50px auto;
+  }
+  .choose__title {
+    margin-top: 50px;
+  }
+  .choose__content-block2 {
+    margin: 50px auto;
+  }
+  .choose__text {
+    width: 100%;
+    max-width: 380px;
+  }
+}
+@media (max-width: 800px) {
+  .places__title-box {
+    background-position: top 50px left;
+  }
+}
+@media (max-width: 710px) {
+  .header__nav {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .header__title {
+    font-size: 50px;
+  }
+  .places__button span {
+    font-size: 80px;
+  }
+  .gallery .content-box:nth-child(2) {
+    display: none;
+  }
+  .content-box__text {
+    font-size: 14px;
+  }
+  .content-box__title {
+    font-size: 20px;
+  }
+  .choose__title {
+    font-size: 45px;
   }
 }
